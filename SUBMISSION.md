@@ -1,8 +1,9 @@
 # Submission: Ajaia Docs
 
+- **Google Drive folder:** https://drive.google.com/drive/folders/1-VzbLbsBPhOSumWwEX5bRnVK2Gafy0ZT?usp=sharing
 - **Live product URL:** https://doc-xfkq.onrender.com
 - **Walkthrough video:** https://drive.google.com/file/d/1j82Pu5oHP1yz_20zcBQWDT9-T_f3KU4r/view?usp=sharing (also in [`VIDEO_URL.txt`](VIDEO_URL.txt))
-- **Source code (zip):** https://drive.google.com/file/d/1g1FilvBsKdszXfcmn4lKNnjtutXokuc_/view?usp=sharing
+- **Source code (zip):** https://drive.google.com/file/d/1-zqmDG7ptYEvyg3rI74beEma_euXgG4E/view?usp=drive_link
 - **GitHub repository:** https://github.com/Gun-Gugan/DoC
 - **Demo accounts** (password `password123` for all three; the login page has one-click buttons):
   - `alice@ajaia.dev`
