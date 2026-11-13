@@ -1,6 +1,6 @@
 # Submission: Ajaia Docs
 
-- **Live product URL:** `<LIVE_URL>`
+- **Live product URL:** https://doc-xfkq.onrender.com
 - **Walkthrough video:** see [`VIDEO_URL.txt`](VIDEO_URL.txt)
 - **Demo accounts** (password `password123` for all three; the login page has one-click buttons):
   - `alice@ajaia.dev`

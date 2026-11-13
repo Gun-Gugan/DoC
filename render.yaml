@@ -7,16 +7,15 @@ services:
     name: ajaia-docs
     runtime: node
     plan: free
-    buildCommand: npm --prefix client ci --include=dev && npm --prefix client run build && npm --prefix server ci --omit=dev
-    startCommand: npm --prefix server start
+    # Root package.json: install → postinstall builds client + installs server; start serves both.
+    buildCommand: npm install
+    startCommand: npm start
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
       - key: NODE_VERSION
         value: "22"
-      - key: CLIENT_DIST
-        value: ../client/dist
       - key: MONGODB_DB
         value: ajaia_docs
       - key: MONGODB_URI

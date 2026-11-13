@@ -2,7 +2,7 @@
 
 A lightweight collaborative document editor: create, format, import, and share documents with owner / editor / viewer access.
 
-**Live demo:** `<LIVE_URL>`
+**Live demo:** https://doc-xfkq.onrender.com
 
 **Stack:** `client/` React 19 + React Router + Vite + Quill 2 · `server/` Node.js 22 + Express + MongoDB
 
@@ -146,13 +146,13 @@ The live deployment is **one Render web service on one URL**. The build compiles
    - Under **Network Access**, allow `0.0.0.0/0`, because Render's outbound IPs aren't fixed.
    - Copy the `mongodb+srv://…` string. URL-encode special characters in the password, e.g. `@` → `%40`.
 2. **GitHub:** push this folder to a new repository.
-3. **Render:** choose **New → Blueprint** and pick the repo. `render.yaml` creates the `ajaia-docs` web service:
-   - build: `client` install + `vite build`, then `server` install
-   - start: `npm --prefix server start`
+3. **Render:** choose **New → Blueprint** and pick the repo, or create a plain **Web Service** with the defaults. Either way the root `package.json` handles it:
+   - build: `npm install`. Its `postinstall` installs and builds `client/`, then installs `server/`.
+   - start: `npm start`. This runs the API with `CLIENT_DIST=../client/dist`.
 4. When Render asks for `MONGODB_URI`, paste the Atlas string. Then deploy.
 5. Open `https://<service>.onrender.com`. The demo users are seeded on first boot. Health check: `/api/health`.
 
-Note: Render's free instances sleep when idle, so the first request after a while can take about 30 s.
+Note: Render's free instances sleep after 15 minutes without traffic, and waking takes up to about a minute. `.github/workflows/keep-alive.yml` pings `/api/health` every 10 minutes to keep the demo warm. If the first load is slow anyway, wait a moment and refresh.
 
 ## Status
 
