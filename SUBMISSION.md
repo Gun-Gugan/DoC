@@ -1,7 +1,9 @@
 # Submission: Ajaia Docs
 
 - **Live product URL:** https://doc-xfkq.onrender.com
-- **Walkthrough video:** see [`VIDEO_URL.txt`](VIDEO_URL.txt)
+- **Walkthrough video:** https://drive.google.com/file/d/1j82Pu5oHP1yz_20zcBQWDT9-T_f3KU4r/view?usp=sharing (also in [`VIDEO_URL.txt`](VIDEO_URL.txt))
+- **Source code (zip):** https://drive.google.com/file/d/1g1FilvBsKdszXfcmn4lKNnjtutXokuc_/view?usp=sharing
+- **GitHub repository:** https://github.com/Gun-Gugan/DoC
 - **Demo accounts** (password `password123` for all three; the login page has one-click buttons):
   - `alice@ajaia.dev`
   - `bob@ajaia.dev`

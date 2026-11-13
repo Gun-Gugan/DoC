@@ -2,7 +2,7 @@
 
 A lightweight collaborative document editor: create, format, import, and share documents with owner / editor / viewer access.
 
-**Live demo:** https://doc-xfkq.onrender.com
+**Live demo:** https://doc-xfkq.onrender.com · **Walkthrough video:** https://drive.google.com/file/d/1j82Pu5oHP1yz_20zcBQWDT9-T_f3KU4r/view?usp=sharing · **Repo:** https://github.com/Gun-Gugan/DoC
 
 **Stack:** `client/` React 19 + React Router + Vite + Quill 2 · `server/` Node.js 22 + Express + MongoDB
 
