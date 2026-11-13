@@ -1,0 +1,23 @@
+# Render Blueprint — one free web service on one URL.
+# client/ and server/ stay separate projects: the build compiles the React client, and the API serves
+# that build (CLIENT_DIST) so the browser talks to a single origin (first-party cookies, no CORS).
+# MongoDB: free MongoDB Atlas M0 cluster (Network Access must allow 0.0.0.0/0 for Render).
+services:
+  - type: web
+    name: ajaia-docs
+    runtime: node
+    plan: free
+    buildCommand: npm --prefix client ci --include=dev && npm --prefix client run build && npm --prefix server ci --omit=dev
+    startCommand: npm --prefix server start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: CLIENT_DIST
+        value: ../client/dist
+      - key: MONGODB_DB
+        value: ajaia_docs
+      - key: MONGODB_URI
+        sync: false   # paste the Atlas connection string in the Render dashboard

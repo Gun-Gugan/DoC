@@ -1,0 +1,4 @@
+Plain text import example.
+Second line of the first paragraph.
+
+A new paragraph.
